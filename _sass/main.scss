@@ -187,6 +187,9 @@ footer small {
 .sidebar-social {
     margin-top: 3em;
     margin-bottom: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15em;
 
     &::after {
         @extend .clearfix;
