@@ -1,0 +1,58 @@
+---
+# https://developer.mozilla.org/en-US/docs/Web/Manifest
+---
+{
+  {% if site.language %}"lang": "{{ site.language }}",{% endif %}
+  "name": "{{ site.title }}",
+  "dir": "{{ site.lang_direction }}",
+  "short_name": "{{ site.title }}",
+  "description": "{{ site.description | markdownify | strip_html | strip_newlines }}",
+  "start_url": "{{ '/' | relative_url }}?utm_source=homescreen",
+  "theme_color": "{{ site.theme_color | default:site.accent_color | default:'#4fb1ba' }}",
+  "background_color": "{{ site.color }}",
+  "orientation": "portrait",
+  "display": "standalone",
+  "icons": [
+   {
+      "src": "{{ 'assets/icons/android-icon-36x36.png' | relative_url }}",
+      "type": "image/png",
+      "sizes": "36x36",
+      "density": "0.75"
+   }, 
+   {
+      "src": "{{ 'assets/icons/android-icon-48x48.png' | relative_url }}",
+      "type": "image/png",
+      "sizes": "48x48",
+      "density": "1.0"
+    },
+    {
+      "src": "{{ 'assets/icons/android-icon-72x72.png' | relative_url }}",
+      "type": "image/png",
+      "sizes": "72x72",
+      "density": "1.5"
+    },
+    {
+      "src": "{{ 'assets/icons/android-icon-96x96.png' | relative_url }}",
+      "type": "image/png",
+      "sizes": "96x96",
+      "density": "2.0"
+    },
+    {
+      "src": "{{ 'assets/icons/android-icon-144x144.png' | relative_url }}",
+      "type": "image/png",
+      "sizes": "144x144",
+      "density": "3.0"
+    },
+    {
+      "src": "{{ 'assets/icons/android-icon-192x192.png' | relative_url }}",
+      "type": "image/png",
+      "sizes": "192x192",
+      "density": "4.0"
+    },
+    {
+      "src": "{{ 'assets/icons/android-icon-192x192.png' | relative_url }}",
+      "type": "image/png",
+      "sizes": "512x512",
+      "density": "4.0"
+    }
+  ]}

@@ -1,0 +1,227 @@
+html {
+    text-size-adjust: 100%;
+}
+html,
+body {
+    height: 100vh;
+    width: 100wh;
+    padding: 0;
+    margin: 0;
+    color: #27262b;
+    font-family: apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial,
+        sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 1.2em;
+    margin-bottom: 0.8em;
+    font-weight: 500;
+    line-height: 1.15;
+    color: #27262b;
+}
+h1 {
+    font-size: 36px;
+    margin-block-start: 18px;
+    margin-bottom: 0;
+}
+a {
+    color: #27262b;
+    text-decoration: none;
+}
+nav a,
+main a {
+    color: #7253ed;
+}
+nav li, .section-nav li {
+    font-size: 14px;
+    padding-inline-start: 0px;
+    list-style-image: none;
+    list-style-type: none;
+}
+.post-date {
+    font-size: 12px;
+}
+.container {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+
+    grid-template-columns: 10fr auto;
+    grid-template-rows: 50px auto auto 50px;
+    // grid-gap: 1px;
+    justify-content: stretch;
+
+    grid-template-areas:
+        "header"
+        "main"
+        "sidebar"
+        "footer";
+}
+
+/* items */
+
+.container header,
+.container footer,
+.container main {
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* rwd */
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 120px auto 40px;
+
+        grid-template-areas:
+            "header   main     main     main"
+            "sidebar  main     main     main"
+            "footer   main   main   main";
+    }
+}
+
+/* specific item styles */
+
+header,
+nav,
+footer {
+    background: #f5f6fa;
+}
+header {
+    grid-area: header;
+    border-bottom-color: #eeebdd;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+header h3 {
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+main {
+    background: #fff;
+    grid-area: main;
+}
+nav {
+    grid-area: sidebar;
+    font-size: 14px;
+    padding-left: 25px;
+}
+nav ul {
+    padding-inline-start: 0px;
+}
+nav li {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+footer {
+    grid-area: footer;
+    text-align: center;
+    border-top-color: #eeebdd;
+    border-top-width: 1px;
+    border-top-style: solid;
+}
+footer small {
+    font-size: 12px;
+}
+
+@font-face {
+    font-family: "icomoon";
+    src: url("../icomoon/fonts/icomoon.eot?api3md");
+    src: url("../icomoon/fonts/icomoon.eot?api3md#iefix") format("embedded-opentype"),
+        url("../icomoon/fonts/icomoon.ttf?api3md") format("truetype"),
+        url("../icomoon/fonts/icomoon.woff?api3md") format("woff"),
+        url("../icomoon/fonts/icomoon.svg?api3md#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: "icomoon" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+    content: "\ea96";
+    font-size: 1.5rem;
+}
+.icon-github:before {
+    content: "\eab0";
+    font-size: 1.5rem;
+}
+.icon-linkedin2:before {
+    content: "\eaca";
+    font-size: 1.5rem;
+}
+
+@mixin clearfix() {
+    content: "";
+    display: table;
+    clear: both;
+}
+.clearfix,
+.clearafter::after {
+    @include clearfix();
+}
+
+.sidebar-social {
+    margin-top: 3em;
+    margin-bottom: 0.5rem;
+
+    &::after {
+        @extend .clearfix;
+    }
+
+    > ul {
+        list-style: none;
+        padding-left: 0;
+
+        > li {
+            float: left;
+
+            > a {
+                display: inline-block;
+                text-align: center;
+                font-size: 0rem;
+                width: 3rem;
+                height: 3.5rem;
+                padding: 0;
+            }
+        }
+
+        li + li {
+            margin-top: 0;
+        }
+    }
+}
+.sidebar-social a {
+    color: #000;
+}
+.sidebar-social {
+    @media print {
+        display: none;
+    }
+}
+.sr-only {
+    display: none;
+}

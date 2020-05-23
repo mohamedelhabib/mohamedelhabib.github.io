@@ -1,0 +1,42 @@
+<ul>
+  {% assign pages = site.pages | where: "menu", true %}
+  {% assign documents = site.documents | where: "menu", true %}
+  {% assign nodes = pages | concat: documents | sort: "order" %}
+  {% for node in nodes %}
+    {% unless node.redirect_to %}
+      <li>
+        <a
+          {% if forloop.first %}id="_navigation"{% endif %}
+          href="{{ node.url | relative_url }}"
+          class="sidebar-nav-item{% if page.url contains node.url %} active{% endif %}"
+          {% if path.rel %}rel="{{ node.rel }}"{% endif %}
+          >
+          {{ node.title }}
+        </a>
+      </li>
+    {% else %}
+      <li>
+        <a href="{{ node.redirect_to }}" class="sidebar-nav-item external" >{{ node.title }}</a>
+      </li>
+    {% endunless %}
+  {% endfor %}
+</ul>
+<div class="sidebar-social">
+  <ul>
+    {% unless include.author.social.twitter %}
+    {% assign twitter_username = author.twitter.username | default: author.twitter | default:site.twitter.username | default:site.twitter | default:site.twitter_username %}
+    {% if twitter_username %}
+    {% include social-list-item.html platform="twitter" username=twitter_username %}
+    {% endif %}
+    {% endunless %}
+    
+    {% unless include.author.social.github %}
+    {% assign github_username = author.github.username | default: author.github | default:site.github.username | default:site.github | default:site.github_username %}
+    {% if github_username %}
+    {% include social-list-item.html platform="github" username=github_username %}
+    {% endif %}
+    {% endunless %}
+
+    {% include social-list-item.html platform="linkedin" username=site.linkedin_username %}
+  </ul>
+</div>

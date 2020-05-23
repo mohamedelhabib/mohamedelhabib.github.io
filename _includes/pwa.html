@@ -1,0 +1,10 @@
+<script>
+    if ("serviceWorker" in navigator) {
+        if (!navigator.serviceWorker.controller) {
+            navigator.serviceWorker
+                .register("{{ site.baseurl }}/pwa.js", {
+                    scope: "/"
+                });
+        }
+    }
+</script>
