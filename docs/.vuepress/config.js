@@ -5,7 +5,7 @@ const websiteUrl = 'https://enjoytechnology.netlify.app';
 const websiteBase = '/'
 const outDir = 'dist'
 
-const googleSiteVerification = 'vaHfBtNF19BYEIpHn505BzxJ8a6lWlV6JO2GOdqptfY';
+const googleSiteVerification = 'FD5syjPsyV04d4f1O9nibUw9TVr-fLJ2sj0uRzheaMc';
 const googleAnalyticsID = 'UA-165929308-1';
 const { path, fs } = require('@vuepress/shared-utils')
 
