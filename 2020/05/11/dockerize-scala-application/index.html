@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dockerize your Scala application | Enjoy Technology</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="manifest" href="/assets/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="preconnect" href="https://storage.googleapis.com">
+    <meta name="description" content="A set of posts to share technology finding and help to get started">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Enjoy Technology">
+    <meta name="application-name" content="Enjoy Technology">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-config" content="/assets/ieconfig.xml">
+    <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="google-site-verification" content="vaHfBtNF19BYEIpHn505BzxJ8a6lWlV6JO2GOdqptfY">
+    <link rel="preload" href="/assets/css/0.styles.05b5abf3.css" as="style"><link rel="preload" href="/assets/js/app.9867d2ee.js" as="script"><link rel="preload" href="/assets/js/4.c6323ad2.js" as="script"><link rel="preload" href="/assets/js/2.79e1ebb6.js" as="script"><link rel="preload" href="/assets/js/11.af07a843.js" as="script"><link rel="preload" href="/assets/js/6.d7f91b89.js" as="script"><link rel="prefetch" href="/assets/js/10.efdfd574.js"><link rel="prefetch" href="/assets/js/12.cd13affe.js"><link rel="prefetch" href="/assets/js/13.39b88b44.js"><link rel="prefetch" href="/assets/js/14.a9fa26a6.js"><link rel="prefetch" href="/assets/js/15.c0b71d42.js"><link rel="prefetch" href="/assets/js/3.8bab5a9e.js"><link rel="prefetch" href="/assets/js/5.f132e9b5.js"><link rel="prefetch" href="/assets/js/7.ada2a324.js"><link rel="prefetch" href="/assets/js/8.724a125e.js"><link rel="prefetch" href="/assets/js/9.2d0a0718.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.05b5abf3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/icons/favicon-32x32.png" alt="Enjoy Technology" class="logo"> <span class="site-name can-hide">Enjoy Technology</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Dockerize your Scala application</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/2020/05/11/dockerize-scala-application/#create-a-hello-world-project" class="sidebar-link">Create a hello world project</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2020/05/11/dockerize-scala-application/#run-the-hello-world-project" class="sidebar-link">Run the hello world project</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2020/05/11/dockerize-scala-application/#package-the-application" class="sidebar-link">Package the application</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2020/05/11/dockerize-scala-application/#generate-a-docker-image-for-the-application" class="sidebar-link">Generate a docker image for the application</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2020/05/11/dockerize-scala-application/#optimise-the-docker-image" class="sidebar-link">Optimise the docker image</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2020/05/11/dockerize-scala-application/#source-code" class="sidebar-link">Source code</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2020/05/11/dockerize-scala-application/#references" class="sidebar-link">References</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> <footer class="footer" data-v-d9212786><ul class="sidebar-social" data-v-d9212786><li class="contact-item" data-v-d9212786><a href="https://github.com/mohamedelhabib" title="github" data-v-d9212786><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github" data-v-d9212786 data-v-d9212786><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" data-v-d9212786 data-v-d9212786></path></svg>
+        github
+      </a></li><li class="contact-item" data-v-d9212786><a href="https://twitter.com/elhabib_med" title="twitter" data-v-d9212786><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter" data-v-d9212786 data-v-d9212786><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" data-v-d9212786 data-v-d9212786></path></svg>
+        twitter
+      </a></li><li class="contact-item" data-v-d9212786><a href="https://www.linkedin.com/in/mohamed-el-habib-77165222" title="linkedin" data-v-d9212786><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin" data-v-d9212786 data-v-d9212786><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" data-v-d9212786 data-v-d9212786></path><rect x="2" y="9" width="4" height="12" data-v-d9212786 data-v-d9212786></rect><circle cx="4" cy="4" r="2" data-v-d9212786 data-v-d9212786></circle></svg>
+        linkedin
+      </a></li></ul> <div class="copyright" data-v-d9212786>MIT Licensed | Copyright © 2020-present</div></footer></aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="create-a-hello-world-project"><a href="#create-a-hello-world-project" class="header-anchor">#</a> Create a hello world project</h2> <p>to create a new scala project you can use this command <code>sbt new scala/hello-world.g8</code>. This require to have sbt already installed.</p> <div class="language-shell extra-class"><pre class="language-shell"><code>$ sbt new scala/hello-world.g8
+</code></pre></div><p>Use <code>hello-world</code> as application name.</p> <p>This will generate the following tree</p> <div class="language-shell extra-class"><pre class="language-shell"><code>$ tree hello-world/
+hello-world/
+├── build.sbt
+├── project
+│   └── build.properties
+└── src
+    └── main
+        └── scala
+            └── Main.scala
+</code></pre></div><h2 id="run-the-hello-world-project"><a href="#run-the-hello-world-project" class="header-anchor">#</a> Run the hello world project</h2> <div class="language-shell extra-class"><pre class="language-shell"><code>$ sbt run
+
+<span class="token punctuation">[</span>info<span class="token punctuation">]</span> <span class="token punctuation">[</span>launcher<span class="token punctuation">]</span> getting org.scala-sbt sbt <span class="token number">1.3</span>.2  <span class="token punctuation">(</span>this may take some <span class="token function">time</span><span class="token punctuation">)</span><span class="token punctuation">..</span>.
+downloading https://repo1.maven.org/maven2/org/scala-sbt/sbt/1.3.2/sbt-1.3.2.jar <span class="token punctuation">..</span>.
+<span class="token punctuation">..</span>.
+<span class="token punctuation">..</span>.
+<span class="token punctuation">[</span>info<span class="token punctuation">]</span>   Compilation completed <span class="token keyword">in</span> <span class="token number">8</span>.27s.
+<span class="token punctuation">[</span>info<span class="token punctuation">]</span> running Main 
+Hello, World<span class="token operator">!</span>
+</code></pre></div><h2 id="package-the-application"><a href="#package-the-application" class="header-anchor">#</a> Package the application</h2> <p>The <code>JavaAppPackaging</code> archetype from <code>sbt-native-packager</code> provides a default application structure and executable scripts to launch your application.</p> <p>Add the <code>sbt-native-packager</code> to your <code>plugins.sbt</code> (Create a new one under project folder)</p> <div class="language- extra-class"><pre class="language-text"><code>addSbtPlugin(&quot;com.typesafe.sbt&quot; % &quot;sbt-native-packager&quot; % &quot;1.7.1&quot;)
+</code></pre></div><p>Enable the JavaAppPackaging plugin in your <code>build.sbt</code> with</p> <div class="language- extra-class"><pre class="language-text"><code>enablePlugins(JavaAppPackaging)
+</code></pre></div><p>This can be done using the following command.</p> <div class="language-shell extra-class"><pre class="language-shell"><code>$ sbt stage
+</code></pre></div><p>The result is available under <code>target/universal/stage</code></p> <div class="language-shell extra-class"><pre class="language-shell"><code>$ tree ./target/universal/stage/
+./target/universal/stage/
+├── bin
+│   ├── hello-world
+│   └── hello-world.bat
+└── lib
+    ├── ch.epfl.scala.hello-world-1.0.jar
+    ├── org.scala-lang.scala-library-2.13.1.jar
+    ├── org.typelevel.cats-core_2.13-2.0.0.jar
+    ├── org.typelevel.cats-kernel_2.13-2.0.0.jar
+    └── org.typelevel.cats-macros_2.13-2.0.0.jar
+</code></pre></div><p>Test the generated script</p> <div class="language-shell extra-class"><pre class="language-shell"><code>$ <span class="token function">bash</span> ./target/universal/stage/bin/hello-world
+Hello, World<span class="token operator">!</span>
+</code></pre></div><p>The usage below show some useful option already available into generated script, like :</p> <ul><li>verbose and debug options</li> <li>a multi main class support</li> <li>selection of java version to use</li> <li>JVM options</li></ul> <div class="language-shell extra-class"><pre class="language-shell"><code>$ <span class="token function">bash</span> target/universal/stage/bin/hello-world -h
+Usage:  <span class="token punctuation">[</span>options<span class="token punctuation">]</span>
+
+  -h <span class="token operator">|</span> -help         print this message
+  -v <span class="token operator">|</span> -verbose      this runner is chattier
+  -d <span class="token operator">|</span> -debug        <span class="token builtin class-name">enable</span> debug output <span class="token keyword">for</span> the launcher script
+  -no-version-check  Don t run the java version check.
+  -main <span class="token operator">&lt;</span>classname<span class="token operator">&gt;</span>  Define a custom main class
+  -jvm-debug <span class="token operator">&lt;</span>port<span class="token operator">&gt;</span>  Turn on JVM debugging, <span class="token function">open</span> at the given port.
+
+  <span class="token comment"># java version (default: java from PATH, currently openjdk version &quot;11.0.7&quot; 2020-04-14)</span>
+  -java-home <span class="token operator">&lt;</span>path<span class="token operator">&gt;</span>         alternate JAVA_HOME
+
+  <span class="token comment"># jvm options and output control</span>
+  JAVA_OPTS          environment variable, <span class="token keyword">if</span> <span class="token builtin class-name">unset</span> uses <span class="token string">&quot;&quot;</span>
+  -Dkey<span class="token operator">=</span>val          pass -Dkey<span class="token operator">=</span>val directly to the java runtime
+  -J-X               pass option -X directly to the java runtime
+                     <span class="token punctuation">(</span>-J is stripped<span class="token punctuation">)</span>
+
+  <span class="token comment"># special option</span>
+  --                 To stop parsing built-in commands from the rest of the command-line.
+                     e.g.<span class="token punctuation">)</span> enabling debug and sending -d as app argument
+                     $ ./start-script -d -- -d
+
+In the <span class="token keyword">case</span> of duplicated or conflicting options, basically the order above
+shows precedence: JAVA_OPTS lowest, <span class="token builtin class-name">command</span> line options highest except <span class="token string">&quot;--&quot;</span><span class="token builtin class-name">.</span>
+Available main classes:
+	Main
+
+</code></pre></div><h2 id="generate-a-docker-image-for-the-application"><a href="#generate-a-docker-image-for-the-application" class="header-anchor">#</a> Generate a docker image for the application</h2> <p>The <code>Docker Plugin</code> from <code>sbt-native-packager</code> implement the following features</p> <ul><li>generate a Dockerfile based on <code>JavaAppPackaging</code> archetype stage.</li> <li>sbt integration to build the docker image</li></ul> <p>Enable the Docker Plugin in your <code>build.sbt</code> with</p> <div class="language- extra-class"><pre class="language-text"><code>enablePlugins(DockerPlugin)
+</code></pre></div><p>Run this command to generate a Dockerfile</p> <div class="language-shell extra-class"><pre class="language-shell"><code>$ sbt docker:stage
+</code></pre></div><p>You can see into below the tree of generated files</p> <ul><li>stage 1 : script and dependencies lib</li> <li>stage 2 : the application jar</li> <li>the Dockerfile</li></ul> <div class="language-shell extra-class"><pre class="language-shell"><code>$ tree target/docker/stage/
+target/docker/stage/
+├── <span class="token number">1</span>
+│   └── opt
+│       └── docker
+│           ├── bin
+│           │   ├── hello-world
+│           │   └── hello-world.bat
+│           └── lib
+│               ├── org.scala-lang.scala-library-2.13.1.jar
+│               ├── org.typelevel.cats-core_2.13-2.0.0.jar
+│               ├── org.typelevel.cats-kernel_2.13-2.0.0.jar
+│               └── org.typelevel.cats-macros_2.13-2.0.0.jar
+├── <span class="token number">2</span>
+│   └── opt
+│       └── docker
+│           └── lib
+│               └── ch.epfl.scala.hello-world-1.0.jar
+└── Dockerfile
+
+<span class="token number">9</span> directories, <span class="token number">8</span> files
+</code></pre></div><p>Let's comment the content of the Dockerfile</p> <div class="language-docker extra-class"><pre class="language-docker"><code>$ more target/docker/stage/Dockerfile 
+<span class="token comment"># A multi stage Dockerfile</span>
+<span class="token comment"># the first stage named `stage0` based on `openjdk:8`</span>
+<span class="token keyword">FROM</span> openjdk<span class="token punctuation">:</span>8 as stage0
+<span class="token comment"># some meta data</span>
+<span class="token keyword">LABEL</span> snp<span class="token punctuation">-</span>multi<span class="token punctuation">-</span>stage=<span class="token string">&quot;intermediate&quot;</span>
+<span class="token keyword">LABEL</span> snp<span class="token punctuation">-</span>multi<span class="token punctuation">-</span>stage<span class="token punctuation">-</span>id=<span class="token string">&quot;2240a3f8-0c82-46f2-8c84-fdd8d43c83f0&quot;</span>
+<span class="token comment"># change to /opt/docker folder</span>
+<span class="token keyword">WORKDIR</span> /opt/docker
+<span class="token comment"># copy target/docker/stage/1/opt from host to /1/opt into container</span>
+<span class="token keyword">COPY</span> 1/opt /1/opt
+<span class="token comment"># copy target/docker/stage/2/opt from host to /2/opt into container</span>
+<span class="token keyword">COPY</span> 2/opt /2/opt
+<span class="token comment"># run following command as `root`</span>
+<span class="token keyword">USER</span> root
+<span class="token comment"># make /1/opt/docker read only</span>
+<span class="token keyword">RUN</span> <span class="token punctuation">[</span><span class="token string">&quot;chmod&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;-R&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;u=rX,g=rX&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;/1/opt/docker&quot;</span><span class="token punctuation">]</span>
+<span class="token comment"># make /2/opt/docker read only</span>
+<span class="token keyword">RUN</span> <span class="token punctuation">[</span><span class="token string">&quot;chmod&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;-R&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;u=rX,g=rX&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;/2/opt/docker&quot;</span><span class="token punctuation">]</span>
+<span class="token comment"># add execution right to the generated script </span>
+<span class="token keyword">RUN</span> <span class="token punctuation">[</span><span class="token string">&quot;chmod&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;u+x,g+x&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;/1/opt/docker/bin/hello-world&quot;</span><span class="token punctuation">]</span>
+
+<span class="token comment"># the second stage named `mainstage` based also on `openjdk:8`</span>
+<span class="token keyword">FROM</span> openjdk<span class="token punctuation">:</span>8 as mainstage
+<span class="token keyword">USER</span> root
+<span class="token comment"># create a demiourgos728 user with id 1001</span>
+<span class="token keyword">RUN</span> id <span class="token punctuation">-</span>u demiourgos728 1<span class="token punctuation">&gt;</span>/dev/null 2<span class="token punctuation">&gt;</span>&amp;1 <span class="token punctuation">|</span><span class="token punctuation">|</span> (( getent group 0 1<span class="token punctuation">&gt;</span>/dev/null 2<span class="token punctuation">&gt;</span>&amp;1 <span class="token punctuation">|</span><span class="token punctuation">|</span> ( type groupadd 1<span class="token punctuation">&gt;</span>/dev/null 2<span class="token punctuation">&gt;</span>&amp;1 &amp;&amp; groupadd <span class="token punctuation">-</span>g 0 root <span class="token punctuation">|</span><span class="token punctuation">|</span> addgroup <span class="token punctuation">-</span>g 0 <span class="token punctuation">-</span>S root )) &amp;&amp; ( type useradd 1<span class="token punctuation">&gt;</span>/dev/null 2<span class="token punctuation">&gt;</span>&amp;1 &amp;&amp; 
+useradd <span class="token punctuation">-</span><span class="token punctuation">-</span>system <span class="token punctuation">-</span><span class="token punctuation">-</span>create<span class="token punctuation">-</span>home <span class="token punctuation">-</span><span class="token punctuation">-</span>uid 1001 <span class="token punctuation">-</span><span class="token punctuation">-</span>gid 0 demiourgos728 <span class="token punctuation">|</span><span class="token punctuation">|</span> adduser <span class="token punctuation">-</span>S <span class="token punctuation">-</span>u 1001 <span class="token punctuation">-</span>G root demiourgos728 ))
+<span class="token keyword">WORKDIR</span> /opt/docker
+<span class="token comment"># copy the content of /1/opt/docker and /2/opt/docker from stage0 into /opt/docker of the mainstage</span>
+<span class="token keyword">COPY</span> <span class="token punctuation">-</span><span class="token punctuation">-</span>from=stage0 <span class="token punctuation">-</span><span class="token punctuation">-</span>chown=demiourgos728<span class="token punctuation">:</span>root /1/opt/docker /opt/docker
+<span class="token keyword">COPY</span> <span class="token punctuation">-</span><span class="token punctuation">-</span>from=stage0 <span class="token punctuation">-</span><span class="token punctuation">-</span>chown=demiourgos728<span class="token punctuation">:</span>root /2/opt/docker /opt/docker
+<span class="token comment"># use the created user to run the final docker image</span>
+<span class="token keyword">USER</span> 1001<span class="token punctuation">:</span>0
+<span class="token comment"># set the hello-world script as an entrypoint of the final docker image</span>
+<span class="token keyword">ENTRYPOINT</span> <span class="token punctuation">[</span><span class="token string">&quot;/opt/docker/bin/hello-world&quot;</span><span class="token punctuation">]</span>
+<span class="token keyword">CMD</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+</code></pre></div><p>To build the docker image run the following command</p> <div class="language-shell extra-class"><pre class="language-shell"><code>$ sbt docker:publishLocal
+</code></pre></div><p>The result is a docker image named with the same name as the project and with the same version as the project.</p> <div class="language-shell extra-class"><pre class="language-shell"><code>$ docker image <span class="token function">ls</span>
+REPOSITORY                  TAG                     IMAGE ID            CREATED             SIZE
+hello-world                 <span class="token number">1.0</span>                     e2585c330c0c        <span class="token number">29</span> seconds ago      525MB
+</code></pre></div><p>Launch this command to test</p> <div class="language- extra-class"><pre class="language-text"><code>$ docker run --rm -ti hello-world:1.0
+Hello, World!
+</code></pre></div><h2 id="optimise-the-docker-image"><a href="#optimise-the-docker-image" class="header-anchor">#</a> Optimise the docker image</h2> <p>The generated docker image have 525MB, let try to optimise this size.
+The docker history give as the size of each layer. Here we use grep to get only layer that the size is above or equals 1MB.
+The third column of this output show the Dockerfile command that generate this layer.
+If we check the Dockerfile we can see that only the first command <code>COPY --chown=demiourgos728</code> is present.
+The other command come from the <code>openjdk:8</code> base image</p> <div class="language-shell extra-class"><pre class="language-shell"><code>$ docker <span class="token function">history</span> hello-world:1.0 <span class="token operator">|</span> <span class="token function">grep</span> MB
+c4658e3633a0        <span class="token number">10</span> minutes ago      /bin/sh -c <span class="token comment">#(nop) COPY --chown=demiourgos728…   13.9MB              </span>
+6cedfea72886        <span class="token number">2</span> weeks ago         /bin/sh -c <span class="token builtin class-name">set</span> -eux<span class="token punctuation">;</span>   <span class="token assign-left variable">dpkgArch</span><span class="token operator">=</span>&quot;<span class="token punctuation">$(</span>dpkg --pr…   206MB               
+<span class="token operator">&lt;</span>missing<span class="token operator">&gt;</span>           <span class="token number">2</span> weeks ago         /bin/sh -c <span class="token builtin class-name">set</span> -eux<span class="token punctuation">;</span>  <span class="token function">apt-get</span> update<span class="token punctuation">;</span>  apt-g…   <span class="token number">11</span>.1MB              
+<span class="token operator">&lt;</span>missing<span class="token operator">&gt;</span>           <span class="token number">2</span> weeks ago         /bin/sh -c <span class="token function">apt-get</span> update <span class="token operator">&amp;&amp;</span> <span class="token function">apt-get</span> install…   146MB               
+<span class="token operator">&lt;</span>missing<span class="token operator">&gt;</span>           <span class="token number">2</span> weeks ago         /bin/sh -c <span class="token builtin class-name">set</span> -ex<span class="token punctuation">;</span>  <span class="token keyword">if</span> <span class="token operator">!</span> <span class="token builtin class-name">command</span> -v gpg <span class="token operator">&gt;</span> /…   <span class="token number">17</span>.5MB              
+<span class="token operator">&lt;</span>missing<span class="token operator">&gt;</span>           <span class="token number">2</span> weeks ago         /bin/sh -c <span class="token function">apt-get</span> update <span class="token operator">&amp;&amp;</span> <span class="token function">apt-get</span> install…   <span class="token number">16</span>.5MB              
+<span class="token operator">&lt;</span>missing<span class="token operator">&gt;</span>           <span class="token number">2</span> weeks ago         /bin/sh -c <span class="token comment">#(nop) ADD file:f086177965196842a…   114MB</span>
+</code></pre></div><p>In fact <code>openjdk:8</code> base image have 510MB as size</p> <div class="language-shell extra-class"><pre class="language-shell"><code>$ docker image <span class="token function">ls</span> <span class="token operator">|</span> <span class="token function">grep</span> openjdk <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">&quot;8 &quot;</span>
+openjdk                     <span class="token number">8</span>                       6cedfea72886        <span class="token number">2</span> weeks ago         510MB
+</code></pre></div><p>Below a list of some openjdk image and we can see that <code>adoptopenjdk</code> jre version the smallest one</p> <div class="language- extra-class"><pre class="language-text"><code>$ docker image ls | grep openjdk | grep &quot;jdk&quot; | sort -h -k7
+adoptopenjdk                11.0.7_10-jre-hotspot   015147d37319        2 weeks ago         227MB
+openjdk                     11.0.7-jre              faf75cb9edb2        2 weeks ago         285MB
+adoptopenjdk                11.0.7_10-jdk-hotspot   6995882bb329        2 weeks ago         420MB
+openjdk                     jre                     6b23d41384f9        13 months ago       479MB
+openjdk                     8                       6cedfea72886        2 weeks ago         510MB
+openjdk                     11.0.7                  f5de33dc9079        2 weeks ago         627MB
+
+</code></pre></div><p>The <code>Docker Plugin</code> provide an option to override the base image.</p> <p>Add this line in your <code>build.sbt</code></p> <div class="language- extra-class"><pre class="language-text"><code>dockerBaseImage := &quot;adoptopenjdk:11.0.7_10-jre-hotspot&quot;
+</code></pre></div><p>and run again</p> <div class="language-shell extra-class"><pre class="language-shell"><code>sbt docker:publishLocal
+</code></pre></div><p>Verify that the base image has changed into Dockerfile</p> <div class="language-shell extra-class"><pre class="language-shell"><code>$ <span class="token function">more</span> target/docker/stage/Dockerfile <span class="token operator">|</span> <span class="token function">grep</span> FROM
+FROM adoptopenjdk:11.0.7_10-jre-hotspot as stage0
+FROM adoptopenjdk:11.0.7_10-jre-hotspot as mainstage
+</code></pre></div><p>The new generated docker image is 54% smaller</p> <div class="language-shell extra-class"><pre class="language-shell"><code>$ docker image <span class="token function">ls</span> 
+REPOSITORY                  TAG                     IMAGE ID            CREATED             SIZE
+hello-world                 <span class="token number">1.0</span>                     7f8b21413d44        <span class="token number">10</span> seconds ago      241MB
+<span class="token operator">&lt;</span>none<span class="token operator">&gt;</span>                      <span class="token operator">&lt;</span>none<span class="token operator">&gt;</span>                  e2585c330c0c        <span class="token number">52</span> minutes ago      525MB
+</code></pre></div><blockquote><p>run <code>docker image prune -f</code> to remove all dangling images.</p></blockquote> <p>Check that application still working</p> <div class="language-shell extra-class"><pre class="language-shell"><code>$ docker run --rm -ti hello-world:1.0
+Hello, World<span class="token operator">!</span>
+</code></pre></div><p>By default, sbt Native Packager will create a daemon user named demiourgos728.
+To change name of the user, add this line in your <code>build.sbt</code></p> <div class="language- extra-class"><pre class="language-text"><code>daemonUser in Docker    := &quot;daemon&quot;
+</code></pre></div><h2 id="source-code"><a href="#source-code" class="header-anchor">#</a> Source code</h2> <p><a href="https://github.com/mohamedelhabib/hello-world-scala-docker" target="_blank" rel="noopener noreferrer">https://github.com/mohamedelhabib/hello-world-scala-docker<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="references"><a href="#references" class="header-anchor">#</a> References</h2> <p>See more options into :</p> <ul><li><a href="https://sbt-native-packager.readthedocs.io/en/stable/formats/docker.html" target="_blank" rel="noopener noreferrer">Docker Plugin Documentation<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://sbt-native-packager.readthedocs.io/en/stable/archetypes/java_app/index.html#java-app-plugin" target="_blank" rel="noopener noreferrer">Java Application Archetype<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.9867d2ee.js" defer></script><script src="/assets/js/4.c6323ad2.js" defer></script><script src="/assets/js/2.79e1ebb6.js" defer></script><script src="/assets/js/11.af07a843.js" defer></script><script src="/assets/js/6.d7f91b89.js" defer></script>
+  </body>
+</html>
