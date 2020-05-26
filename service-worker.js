@@ -27,23 +27,23 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "1970/01/01/_404/index.html",
-    "revision": "2438ca3cbdc3a8150a95d9ac5b5ff023"
+    "revision": "06546f88946a31ae00e0a9161004474b"
   },
   {
     "url": "2020/05/10/secure-api-using-openid-connect-and-spring-security/index.html",
-    "revision": "db609ee63600082e55d576ffad863c02"
+    "revision": "4b5686d75b9c08463e708e7ad7e6d5da"
   },
   {
     "url": "2020/05/11/dockerize-scala-application/index.html",
-    "revision": "12a0a0de62cbd2b3599ef32600081e5f"
+    "revision": "154baf14794daf86845bdf22be6486de"
   },
   {
     "url": "2020/05/15/kubernetes-istio-into-local-environment-with-k3d/index.html",
-    "revision": "b105602a25a17b7d7ccdc9885dc2362f"
+    "revision": "242815aa55d5bbcd182c99d511eb5d4a"
   },
   {
     "url": "2020/05/18/insall-kafka-strimzi-operator-into-k3s/index.html",
-    "revision": "b7d5cff602eae915d963350f70b4055e"
+    "revision": "c2976a6e3ede558d5890349a5b67a516"
   },
   {
     "url": "assets/css/0.styles.05b5abf3.css",
@@ -210,12 +210,12 @@ self.__precacheManifest = [
     "revision": "0b23ce5686a9429556e37391fc91f412"
   },
   {
-    "url": "assets/js/app.9867d2ee.js",
-    "revision": "8d1920c0bc2e37ab7c31aaa488298908"
+    "url": "assets/js/app.8bb2a787.js",
+    "revision": "4a6bbe73453c534a485b471179d0cf04"
   },
   {
     "url": "index.html",
-    "revision": "edb01e44b578045e45993a65d3bf6efd"
+    "revision": "bf539e75d989ab33614026d4b1b4331a"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
