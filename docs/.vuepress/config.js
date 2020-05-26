@@ -1,7 +1,7 @@
 const siteTitle = 'Enjoy Technology';
 const siteDescription = 'A set of posts to share technology finding and help to get started';
 const copyright = 'MIT Licensed | Copyright © 2020-present';
-const websiteUrl = 'https://mohamedelhabib.github.io';
+const websiteUrl = 'https://enjoytechnology.netlify.app';
 const websiteBase = '/'
 const outDir = 'dist'
 
