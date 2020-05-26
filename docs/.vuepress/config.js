@@ -2,7 +2,7 @@ const siteTitle = 'Enjoy Technology';
 const siteDescription = 'A set of posts to share technology finding and help to get started';
 const copyright = 'MIT Licensed | Copyright © 2020-present';
 const websiteUrl = 'https://mohamedelhabib.github.io';
-const websiteBase = '/vp/'
+const websiteBase = '/'
 const outDir = 'dist'
 
 const googleSiteVerification = 'vaHfBtNF19BYEIpHn505BzxJ8a6lWlV6JO2GOdqptfY';
