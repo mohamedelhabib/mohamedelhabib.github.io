@@ -1,5 +1,8 @@
 <template>
   <ParentLayout>
+    <template #page-bottom>
+      <Vssue :title="$title" />
+    </template>
     <template #sidebar-bottom>
       <Footer/>
     </template>

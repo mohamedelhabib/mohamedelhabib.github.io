@@ -170,6 +170,15 @@ module.exports = {
             base_url: websiteBase,
             site_url: websiteUrl,
             copyright: copyright
-        }
+        },
+        '@vssue/vuepress-plugin-vssue': {
+            // set `platform` rather than `api`
+            platform: 'github-v4',
+            // all other options of Vssue are allowed
+            owner: 'mohamedelhabib',
+            repo: 'enjoytechnology',
+            clientId: 'a20a5f072fc178770a96',
+            clientSecret: 'c443d3d1bb44ccd1d8126862ff7b45ca4552036b',
+          },
     }
 }

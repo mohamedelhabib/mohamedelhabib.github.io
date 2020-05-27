@@ -51,13 +51,8 @@
 
     <Content class="theme-default-content custom" />
 
+    <Vssue :title="$title" />
     <Footer/>
-    <!-- <div
-      v-if="data.footer"
-      class="footer"
-    >
-      {{ data.footer }}
-    </div> -->
   </main>
 </template>
 
