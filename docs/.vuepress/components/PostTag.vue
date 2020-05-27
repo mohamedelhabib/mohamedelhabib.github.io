@@ -22,5 +22,7 @@ export default {
   font-size: 1rem;
   font-weight: 500;
   color: #fff;
+  margin-top: 1rem;
+  display: inline-block;
 }
 </style>
