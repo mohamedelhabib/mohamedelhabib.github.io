@@ -137,9 +137,10 @@ kube-system   service/traefik              LoadBalancer   10.43.54.34    172.19.
 ### Create a demo application 
 
 Create an new spring-boot application using https://start.spring.io/.
-For this tuto we will use an already prepared application from `demo-app` folder.
+For this tuto we will use an already prepared application from [demo-app-istio-k3d](https://github.com/mohamedelhabib/demo-app-istio-k3d) repository.
 
 ```shell
+$ git clone https://github.com/mohamedelhabib/demo-app-istio-k3d
 # checkout the 1.0 tag
 $ git checkout 1.0
 ```
