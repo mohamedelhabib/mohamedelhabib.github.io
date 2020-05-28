@@ -136,7 +136,7 @@ metadata:
 ```shell
 $ curl https://strimzi.io/install/latest?namespace=kafka -o k8s/02_strimzi_kafka_operator.yml
 ```
-### Create the kafka namespace manifest
+### Create the kafka manifest
 
 ```shell
 $ curl https://strimzi.io/examples/latest/kafka/kafka-persistent-single.yaml -o 03_kafka-persistent-single.yml
