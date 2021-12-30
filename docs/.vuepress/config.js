@@ -179,9 +179,6 @@ module.exports = {
             repo: 'enjoytechnology',
             clientId: 'a20a5f072fc178770a96',
             clientSecret: 'c443d3d1bb44ccd1d8126862ff7b45ca4552036b',
-        },
-        "vuepress-plugin-google-adsense": {
-        ad_client: "ca-pub-6977105062716418"
-        },
+        }
     }
 }

@@ -17,7 +17,6 @@
     "dayjs": "^1.10.7",
     "vue-feather-icons": "^5.1.0",
     "vuepress": "^1.9.5",
-    "vuepress-plugin-google-adsense": "^0.2.1",
     "vuepress-plugin-rss": "^2.0.0",
     "vuepress-plugin-sitemap": "^2.3.1"
   },
